@@ -15,9 +15,9 @@
 include device/sony/yoshino/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %g8341,$(TARGET_PRODUCT)))
+ifneq (,$(filter %hentai_poplar_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := G8341
-else ifneq (,$(filter %g8342,$(TARGET_PRODUCT)))
+else ifneq (,$(filter %hentai_poplar_DSDS,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := G8342
 else
 TARGET_BOOTLOADER_BOARD_NAME := G8341

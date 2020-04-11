@@ -20,6 +20,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_SHIPPING_API_LEVEL := 26
 
+TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
+
+TARGET_GAPPS_ARCH := arm64
+
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
@@ -29,6 +33,18 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
+# Wallpapers
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt
+    
+# Update recovery with the ota for legacy
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.recovery_update=true
+    
+# Use Vulkan for UI rendering
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.renderer=skiavk
+    
 # Thermal Configuration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/thermanager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermanager.xml

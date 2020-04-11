@@ -19,10 +19,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=9,1
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/poplar/aosp_g8341.mk)
+$(call inherit-product, device/sony/poplar/hentai_poplar_RoW.mk)
 
-PRODUCT_NAME := aosp_g8342
+PRODUCT_NAME := hentai_poplar_DSDS
 PRODUCT_DEVICE := poplar
-PRODUCT_MODEL := Xperia XZ1 Dual (AOSP)
+PRODUCT_MODEL := Xperia XZ1 Dual
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony

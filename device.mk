@@ -22,6 +22,16 @@ PRODUCT_SHIPPING_API_LEVEL := 26
 
 TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
 
+# Compilers setup for Q
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_CLANG_VERSION := r353983c
+
+# Kernel inline building
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
+TARGET_NEEDS_DTBOIMAGE := false
+
 TARGET_GAPPS_ARCH := arm64
 
 # Device Specific Permissions

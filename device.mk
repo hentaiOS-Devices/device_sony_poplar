@@ -41,9 +41,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.recovery_update=true
     
-# Use Vulkan for UI rendering
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.renderer=skiavk
+## Use Vulkan for UI rendering
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    debug.hwui.renderer=skiavk
     
 # Thermal Configuration
 PRODUCT_COPY_FILES += \

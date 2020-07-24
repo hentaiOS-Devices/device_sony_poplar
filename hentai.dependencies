@@ -228,6 +228,12 @@
     "target_path":  "vendor/qcom/opensource/gps",
     "branch":     "aosp/LA.UM.8.1.r1"
   },
+    {
+    "remote":       "github",
+    "repository":   "sonyxperiadev/SonyOpenTelephony",
+    "target_path":  "packages/apps/SonyOpenTelephony",
+    "branch":       "master"
+  },
   {
     "repository": "packages_apps_PixelLiveWallpaper",
     "target_path": "packages/apps/PixelLiveWallpaper",

@@ -191,7 +191,7 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/vendor-qcom-opensource-location",
     "target_path":  "vendor/qcom/opensource/location",
-    "branch":     "q-mr0"
+    "branch":     "aosp/LA.UM.8.1.r1"
   },
   {
     "repository":   "device_sony_ipacfg-mgr",
@@ -221,6 +221,12 @@
     "repository":   "afstamming/proprietary_vendor_widevine",
     "target_path":  "vendor/widevine",
     "branch":     "af-lineage-17.0"
+  },
+    {
+    "remote":       "github",
+    "repository":   "sonyxperiadev/hardware-qcom-gps",
+    "target_path":  "vendor/qcom/opensource/gps",
+    "branch":     "aosp/LA.UM.8.1.r1"
   },
   {
     "repository": "packages_apps_PixelLiveWallpaper",

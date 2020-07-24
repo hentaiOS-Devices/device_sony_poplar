@@ -57,13 +57,13 @@
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-common",
     "target_path":  "device/sony/common",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
   {
     "remote":       "github",
     "repository":   "sonyxperiadev/device-sony-yoshino",
     "target_path":  "device/sony/yoshino",
-    "branch":     "master"
+    "branch":     "q-mr1"
   },
   {
     "remote":       "github",
